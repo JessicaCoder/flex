@@ -1,0 +1,106 @@
+
+  .box{display: flex;margin:10px;background:#89479b;
+    .item{background-color:  #e88024;margin: 10px;
+      width: 50px;height: 50px;font-size: 30px;color: white;line-height: 50px;text-align: center;
+      // &:nth-child(1){background-color: red;}
+      // &:nth-child(2){background-color: blue;}
+      // &:nth-child(3){background-color:olivedrab;}
+    }
+  }
+  // flex-direction
+  .box-1{
+    flex-direction: row;
+  }
+  .box-2{
+    flex-direction: row-reverse;
+  }
+  .box-3{
+    flex-direction: column;
+  }
+  .box-4{
+    flex-direction: column-reverse;
+  }
+  .box-tall{height:300px;width: 300px;}
+  .box-5{
+      flex-wrap: nowrap;
+    }
+    .box-6{
+      flex-wrap: wrap;
+    }
+    .box-7{
+      flex-wrap: wrap-reverse;
+    }
+  
+
+  .box-8{flex-flow: column-reverse wrap;width:350px;height: 350px;    overflow: auto;}
+
+
+    .box-9{
+      justify-content: flex-start;
+    }
+    .box-10{
+      justify-content: flex-end;
+    }
+    .box-11{
+      justify-content: space-around;
+    }
+    .box-12{
+      justify-content: space-between;
+    }
+    .box-13{
+      justify-content: center;
+    }
+    .box-14{
+      justify-content: space-evenly;  
+    }
+    .box-15{
+       .item{
+         &:nth-child(1){margin-left: auto;}
+        &:nth-child(2){margin: auto;}
+        &:nth-child(3){margin-right: auto;}
+       }
+        
+    }
+  
+
+    .box-heightD{
+  .item{
+  &:nth-child(1){height:100px;}
+      &:nth-child(2){height: 150px;line-height: 150px;}
+      &:nth-child(4){height:200px;}
+      }
+
+}
+.box-16{align-items:flex-start;}
+.box-17{align-items:flex-end;}
+.box-18{align-items:center;}
+.box-19{align-items:stretch;
+.item{height: auto !important;
+}}
+.box-20{align-items:baseline;
+.item{&:nth-child(2){line-height: inherit;}}}
+.box-21{
+  align-content: flex-start;
+}
+.box-22{
+  align-content: flex-end;
+}
+.box-23{
+  align-content: space-around;
+}
+.box-24{
+  align-content: space-between;
+}
+.box-25{
+  align-content: center;
+}
+.box-26{
+  align-content: stretch;
+  .item{height: auto;}
+}
+.box-27{width: 400px;
+  .item{width: 100px;}
+}
+// .box{
+//         display: flex;flex-direction: column;
+//       }

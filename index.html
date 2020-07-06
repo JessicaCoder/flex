@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+    <link rel="stylesheet" href="css/flex.css">
+  </head>
+
+  <body>
+    <!-- 注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。 -->
+
+      <h1>flex-direction</h1>
+      <div class="box box-1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+      <div class="box box-2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <div class="box box-3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <div class="box box-4">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <h1>flex-wrap</h1>
+      <div class="box box-5 box-tall" style="overflow: hidden;">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+      </div>
+
+      <div class="box box-6 box-tall">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+      </div>
+
+      <div class="box box-7 box-tall">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+      </div>
+      <h1>flex-flow</h1>
+      <aside>flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap</aside>
+      <div class="box box-8">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <!-- <div class="item">12</div>  -->
+      </div>
+      <div class="box box-9">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <div class="box box-10">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <div class="box box-11">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+      <div class="box box-12">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+      <div class="box box-13">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      space-evenly兼容性不好，建议用margin：auto;替代使用
+      <div class="box box-14">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+      <div class="box box-15">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+        <p>
+          3.5 align-items属性
+          align-items属性定义项目在交叉轴上如何对齐。
+          .box {
+          align-items: flex-start | flex-end | center | baseline | stretch;
+          }
+        </p>
+        <div class="box box-16 box-heightD">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+        <div class="box box-17 box-heightD">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+
+        <div class="box box-18 box-heightD">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+        <div class="box box-19 box-heightD">
+          <div class="item">1</div>
+          <div class="item">2</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+        <div class="box box-20 box-heightD">
+          <div class="item">1</div>
+          <div class="item">2<br>22</div>
+          <div class="item">3</div>
+          <div class="item">4</div>
+        </div>
+        <p>3.6 align-content属性
+          align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
+          .box {
+          align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+          }
+        </p>
+          <div class="box box-21 box-6 box-tall">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div>
+            <div class="item">5</div><div class="item">6</div><div class="item">7</div><div class="item">8</div>
+          </div>
+          <div class="box box-22 box-6 box-tall">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div>
+            <div class="item">5</div><div class="item">6</div><div class="item">7</div><div class="item">8</div>
+          </div>
+
+          <div class="box box-23 box-6 box-tall">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div>
+            <div class="item">5</div><div class="item">6</div><div class="item">7</div><div class="item">8</div>
+          </div>
+          <div class="box box-24 box-6 box-tall">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div>
+            <div class="item">5</div><div class="item">6</div><div class="item">7</div><div class="item">8</div>
+          </div>
+          <div class="box box-25 box-6 box-tall">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div><div class="item">5</div><div class="item">6</div><div class="item">7</div><div class="item">8</div>
+          </div>
+          <div class="box box-26 box-6 box-tall">
+            <div class="item">1</div><div class="item">2</div><div class="item">3</div><div class="item">4</div><div class="item">5</div><div class="item">6</div><div class="item">7</div><div class="item">8</div>
+          </div>
+          <p>
+          四、项目的属性
+以下6个属性设置在项目上。
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+</p>
+<h6>4.1 order属性
+  order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。</h6>
+<div class="box">
+  <div class="item" style="order:1">1</div>
+  <div class="item" style="order:2">2</div>
+  <div class="item" style="order:3">3</div>
+  <div class="item" style="order:4">4</div>
+  <div class="item" style="order:-1">5</div>
+  <div class="item" >7</div>
+</div>
+<h6>4.2 flex-grow属性
+  flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+  
+  
+  .item {
+    flex-grow: <number>; /* default 0 */
+  }</h6>
+<div class="box">
+  <div class="item">0</div>
+  <div class="item" style="flex-grow:0">0</div>
+  <div class="item" style="flex-grow:1">1</div>
+  <div class="item" style="flex-grow:2">2</div>
+  <div class="item" style="flex-grow:3">3</div>
+</div>
+<h6>4.3 flex-shrink属性
+  flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+  
+  
+  .item {
+    flex-shrink: <number>; /* default 1 */
+  }</h6>
+<div class="box box-27" >
+  <div class="item" >1</div>
+  <div class="item" style="flex-shrink:0">2</div>
+  <div class="item" style="flex-shrink:1">3</div>
+  <div class="item" style="flex-shrink:1">4</div>
+  <div class="item" style="flex-shrink:2">5</div>
+</div>
+<aside>如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。</aside>
+<h4>4.4 flex-basis属性
+  flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
+  .item {
+    flex-basis: <length> | auto; /* default auto */
+  }
+  它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。</h4>
+  <div class="box">
+    <div class="item" style="flex-basis:auto">1</div>
+    <div class="item" style="flex-basis:300px">2</div>
+    <div class="item" >3</div>
+  </div>
+  <h4>4.5 flex属性
+    flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
+    
+    
+    .item {
+      flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    }
+    该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。
+    
+    建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</h4>
+    <h4>
+      4.6 align-self属性
+align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
+    </h4>
+    <div class="box box-tall box-heightD">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item" style="align-self: flex-end;">3</div>
+    </div>
+    <div class="box">
+      <div class="top">top</div>
+      <div class="middle">
+        <div class="left">left</div>
+        <div class="center">center</div>
+        <div class="right">right</div>
+      </div>
+      <div class="bottom">bottom</div>
+    </div>
+    
+  </body>
+
+</html>
