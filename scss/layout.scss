@@ -1,0 +1,97 @@
+$contentBgColor:rgb(72, 168, 212);
+$menuAsideBgColor:#524a42;
+$menuBgColor:#948c7b;
+$t_color:#333;
+$link_color:darken(#fff,10%);
+$HFbgColor:antiquewhite;
+@mixin ul-default {
+  ul{
+    list-style: none;
+    li{
+      line-height: 1.5;
+      a{text-decoration: none;color: $link_color;}
+    }
+  }
+}
+body{
+  padding: 0;margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.wrap{
+  display: flex;flex-direction:row;height:100%;
+  .conetent{background-color: $contentBgColor;flex: 1;overflow-y:auto;}
+  .menu-aside{
+    background-color:$menuAsideBgColor ;overflow-y:auto;
+    .menu{background-color:$menuBgColor ;
+      @include ul-default
+    // ul>li{
+
+    // }
+  }
+  }
+}
+header,footer{background-color:$HFbgColor;word-break: break-all;}
+
+/* conetent里面的demo样式
+* 引入的居中的各种demo
+* 看flex布局的可以忽略后面的样式 
+*/
+.inline-center{text-align: center;}
+.page-wrap {
+  position: relative;
+  // 图片在文章居中
+  article {
+  #l,#r{width: 49%;
+    &::before{
+      content: "";
+      width: 125px;
+      height: 250px;
+    }
+  }
+  #l{
+    float: left;
+    &::before{
+      float: right;
+    }
+  }
+  #r{float: right;
+    &::before{
+      float: left;
+    }
+  }
+}
+  #cart{
+    position: absolute;
+    top: 0;
+    left: 50%;
+margin-left: -125px;
+  }
+}
+
+.ghost-center {
+  position: relative;
+    background: white;
+    width: 240px;
+    height: 200px;
+    margin: 20px;
+    color: white;
+    resize: vertical;
+    overflow: auto;
+    padding: 20px;
+  
+  &::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+  }
+  p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}

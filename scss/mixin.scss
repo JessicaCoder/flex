@@ -1,0 +1,86 @@
+// @import "test1";
+@mixin rounded-corners {
+  -moz-border-radius:3px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+.notice{
+background-color: green;
+border: 2px solid #00aa00 {
+  left: 4px;
+  right-color:red;
+};
+@include rounded-corners;
+}
+
+$version:"0.0.1";
+/* 项目当前的版本是：#{$version} */
+$name:"info";
+$attr:"border";
+.alert-#{$name}{
+  #{$attr}-color:#ccc
+}
+$theme:dark;
+$use-prefixes:true;
+body{
+  @if $theme == dark{
+    background-color:lighten(#00aa00,50%);
+  }@else if $theme == light{
+    background-color:white;
+  }@else{background-color: grey;}
+}
+.rounded{
+  @if $use-prefixes{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -o-border-radius:5px;
+  }
+  border-radius:5px;
+}
+$columns:4;
+/* through包含column*/
+@for $i from 1 through $columns{
+  .col-#{$i}{
+    width:100%/$columns*$i;
+  }
+}
+/* to不包含column*/
+@for $i from 1 to $columns{
+  .col-#{$i}{
+    width:100%/$columns*$i;
+  }
+}
+$icons: success error warning;
+@each $icon in $icons {
+  .icon-#{$icon}{
+    background-image: url(../images/icons/#{$icon}.png);
+  }
+}
+$i:6;
+@while $i>0 {
+  .item-#{$i}{
+    width:5px*$i;
+  }
+  $i: $i - 2;
+}
+// .rounded{
+//   @if $use-prefixes{
+
+//   }
+//   border-radius: 5px;
+// }
+
+
+$colors:(light:#fff,dark:#000);
+
+@function color($key){
+  @if not map-has-key($map: $colors, $key: $key){
+    @error "在$colors里没找到#{$key} 这个key"
+  }
+  @return map-get($colors,$key);
+}
+
+body{
+  background-color: color(light);
+  color: color(gray);
+}

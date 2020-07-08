@@ -1,0 +1,31 @@
+@charset "UTF-8";
+body { padding: 0; margin: 0; position: absolute; left: 0; right: 0; bottom: 0; top: 0; }
+
+.wrap { display: flex; flex-direction: row; height: 100%; }
+.wrap .conetent { background-color: #48a8d4; flex: 1; overflow-y: auto; }
+.wrap .menu-aside { background-color: #524a42; overflow-y: auto; }
+.wrap .menu-aside .menu { background-color: #948c7b; }
+.wrap .menu-aside .menu ul { list-style: none; }
+.wrap .menu-aside .menu ul li { line-height: 1.5; }
+.wrap .menu-aside .menu ul li a { text-decoration: none; color: #e6e6e6; }
+
+header, footer { background-color: antiquewhite; word-break: break-all; }
+
+/* conetent里面的demo样式
+* 引入的居中的各种demo
+* 看flex布局的可以忽略后面的样式 
+*/
+.inline-center { text-align: center; }
+
+.page-wrap { position: relative; }
+.page-wrap article #l, .page-wrap article #r { width: 49%; }
+.page-wrap article #l::before, .page-wrap article #r::before { content: ""; width: 125px; height: 250px; }
+.page-wrap article #l { float: left; }
+.page-wrap article #l::before { float: right; }
+.page-wrap article #r { float: right; }
+.page-wrap article #r::before { float: left; }
+.page-wrap #cart { position: absolute; top: 0; left: 50%; margin-left: -125px; }
+
+.ghost-center { position: relative; background: white; width: 240px; height: 200px; margin: 20px; color: white; resize: vertical; overflow: auto; padding: 20px; }
+.ghost-center::before { content: " "; display: inline-block; height: 100%; width: 1%; vertical-align: middle; }
+.ghost-center p { display: inline-block; vertical-align: middle; }
