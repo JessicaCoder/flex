@@ -8,9 +8,19 @@ HeaderFooterDynamic.html符合大多数后台的框架布局，急用的可以�
 [sass入门](https://www.sass.hk/guide/)
 [windows tree目录命令](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/tree)
 # tips
-sass编译命令 sass --watch scss/flex.scss:css/flex.css scss/layout.scss:css/layout.css --style compact --sourcemap=none --no-cache
-tree目录 tree c:\ /f | more   或 tree  D:\repository\flex /f
+-sass编译命令
+```bash
+sass --watch scss/flex.scss:css/flex.css scss/layout.scss:css/layout.css 
+--style compact --sourcemap=none --no-cache
+```
+
+-tree目录 
+```bash
+tree c:\ /f | more   或 tree  D:\repository\flex /f >tree.txt
+```
 # 目录
+<pre>
+.
 │   columnsAllDynamic.html
 │   HeaderFooterDynamic.html  //上手用的直接看这个文件
 │   index.html
@@ -34,3 +44,4 @@ tree目录 tree c:\ /f | more   或 tree  D:\repository\flex /f
         layout.scss
         mixin.scss  //练习sass的个人demo，与flex布局无关，可删去
         _test1.scss //练习sass的个人demo，与flex布局无关，可删去
+        </pre>
